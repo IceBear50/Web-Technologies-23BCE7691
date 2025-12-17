@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: linear-gradient(90deg, #020617, #0f172a);
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.navbar a {
+  color: #cbd5f5;
+  margin-left: 24px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+  display: flex;
+  gap: 50px;
+  padding: 80px 60px;
+  background: radial-gradient(circle at top left, #020617, #020617);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #f8fafc;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #cbd5f5;
+}
+
+.hero button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #0ea5e9;
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+  padding: 60px 60px;
+}
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+  background: #020617;
+}
+
+.card {
+  background: #020617;
+  padding: 28px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.card p {
+  color: #cbd5f5;
+}
+
+/* ================= PRODUCTS / RFP ================= */
+
+.product,
+.rfp {
+  background: #020617;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+  margin-bottom: 30px;
+}
+
+.product h3,
+.rfp h3 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.product ul {
+  padding-left: 18px;
+}
+
+.product li {
+  margin-bottom: 6px;
+  color: #cbd5f5;
+}
+
+/* ================= CONTENT ================= */
+
+.content {
+  background: #0b1220;
+  padding: 60px;
+}
+
+.content h2 {
+  color: #f8fafc;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+/* ================= LINKS ================= */
+
+a {
+  color: #38bdf8;
+}
+
+a:hover {
+  color: #0ea5e9;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  border-top: 1px solid #1e293b;
+  color: #94a3b8;
+}
