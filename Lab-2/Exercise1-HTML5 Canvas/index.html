@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Canvas Demo</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="500" height="300"></canvas>
+
+  <script>
+    const c = document.getElementById("myCanvas")
+    const ctx = c.getContext("2d")
+
+    ctx.fillStyle = "#4caf50"
+    ctx.fillRect(40, 40, 150, 90)
+
+    ctx.beginPath()
+    ctx.arc(300, 90, 40, 0, Math.PI * 2)
+    ctx.fillStyle = "#ff5722"
+    ctx.fill()
+
+    ctx.beginPath()
+    ctx.moveTo(50, 200)
+    ctx.lineTo(450, 200)
+    ctx.strokeStyle = "#000"
+    ctx.lineWidth = 3
+    ctx.stroke()
+
+    ctx.font = "24px Arial"
+    ctx.fillStyle = "#1e88e5"
+    ctx.fillText("HTML5 Canvas", 160, 260)
+  </script>
+</body>
+</html>
