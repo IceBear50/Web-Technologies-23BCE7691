@@ -1,0 +1,6 @@
+[
+    {"id": 1, "name": "Sony Headphones", "price": 199, "category": "Audio"},
+    {"id": 2, "name": "Acer Keyboard", "price": 140, "category": "Peripherals"},
+    {"id": 3, "name": "Acer Laptop", "price": 399, "category": "Displays"},
+    {"id": 4, "name": "USB-C Hub", "price": 45, "category": "Accessories"}
+]
