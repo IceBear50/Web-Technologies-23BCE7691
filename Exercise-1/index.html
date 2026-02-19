@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Management</h2>
+        <div id="msgBox"></div>
+        <form id="empForm" class="grid-form">
+            <input type="text" id="empId" placeholder="ID" required>
+            <input type="text" id="empName" placeholder="Name" required>
+            <input type="text" id="empDept" placeholder="Department" required>
+            <input type="number" id="empSalary" placeholder="Salary" required>
+            <button type="submit">Save</button>
+        </form>
+        <table>
+            <thead><tr><th>ID</th><th>Name</th><th>Dept</th><th>Salary</th><th>Actions</th></tr></thead>
+            <tbody id="empTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

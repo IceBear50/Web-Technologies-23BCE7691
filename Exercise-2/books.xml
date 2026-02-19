@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <id>B001</id>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <status>Available</status>
+    </book>
+    <book>
+        <id>B002</id>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <status>Checked Out</status>
+    </book>
+    <book>
+        <id>B003</id>
+        <title>Hobbit</title>
+        <author>JRR Tolkien</author>
+        <status>Available</status>
+    </book>
+    <book>
+        <id>B004</id>
+        <title>1988</title>
+        <author>George Orwell</author>
+        <status>Checked Out</status>
+    </book>
+</library>
