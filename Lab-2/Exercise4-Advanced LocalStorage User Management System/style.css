@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 800px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+form button {
+  grid-column: span 2;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #00e5ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background: rgba(0,0,0,0.4);
+}
+
+tbody tr {
+  background: rgba(255,255,255,0.9);
+  color: #111;
+}
+
+tbody tr:not(:last-child) {
+  border-bottom: 6px solid transparent;
+}
+
+td button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: #e53935;
+  color: #fff;
+  cursor: pointer;
+}
+
+.clear {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #ff7043;
+  font-weight: 600;
+  cursor: pointer;
+}

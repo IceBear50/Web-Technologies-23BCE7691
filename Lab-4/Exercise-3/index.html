@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Exercise-1/styles.css">
+    <style>
+        .container { max-width: 800px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        th, td { text-align: left; padding: 1rem; border-bottom: 1px solid var(--border); }
+        th { color: #64748b; font-size: 0.875rem; font-weight: 600; text-transform: uppercase; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr 1fr auto; gap: 1rem; align-items: center; }
+        .action-btn { background: none; color: #64748b; padding: 0.25rem; width: auto; font-size: 0.875rem; margin-right: 0.5rem; }
+        .action-btn:hover { color: var(--primary); text-decoration: underline; opacity: 1; }
+        .delete-btn:hover { color: var(--error); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <h2>Student Manager</h2>
+            <div id="toast" style="font-size:0.875rem;"></div>
+        </div>
+        
+        <form id="crudForm" class="form-grid">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="text" id="dept" placeholder="Dept" required>
+            <input type="number" id="marks" placeholder="Marks" required>
+            <button type="submit" id="mainBtn">Add</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Dept</th>
+                    <th>Marks</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

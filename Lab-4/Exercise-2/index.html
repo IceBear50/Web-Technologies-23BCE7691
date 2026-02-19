@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Exercise-1/styles.css">
+    <style>
+        .product-grid { display: grid; gap: 1rem; margin-top: 1.5rem; max-height: 300px; overflow-y: auto; }
+        .product-card { border: 1px solid var(--border); padding: 1rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+        .product-card h4 { margin: 0; font-size: 1rem; }
+        .badge { background: #e0e7ff; color: #4338ca; padding: 0.25rem 0.5rem; border-radius: 99px; font-size: 0.75rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Product Search</h2>
+        <div class="input-group">
+            <input type="text" id="search" placeholder="Search by name or category...">
+        </div>
+        <div id="loader" class="spinner"></div>
+        <div id="results" class="product-grid"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

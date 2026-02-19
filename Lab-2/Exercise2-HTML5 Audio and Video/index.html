@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multimedia Experience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #1e3c72, #2a5298);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 700px;
+      background: rgba(0,0,0,0.3);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: #ffd54f;
+    }
+
+    .player {
+      margin-bottom: 25px;
+    }
+
+    .time {
+      margin-top: 6px;
+      font-size: 14px;
+      color: #e0e0e0;
+    }
+
+    audio, video {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="player">
+      <h2>🎵 Audio Player</h2>
+      <audio id="audio" controls>
+        <source src="audio.mp3" type="audio/mpeg">
+      </audio>
+      <div class="time" id="audioTime">00:00</div>
+    </div>
+
+    <div class="player">
+      <h2>Video Player</h2>
+      <video id="video" controls>
+        <source src="video.mp4" type="video/mp4">
+      </video>
+      <div class="time" id="videoTime">00:00</div>
+    </div>
+  </div>
+
+  <script>
+    const audio = document.getElementById("audio")
+    const video = document.getElementById("video")
+    const audioTime = document.getElementById("audioTime")
+    const videoTime = document.getElementById("videoTime")
+
+    const formatTime = t => {
+      const m = Math.floor(t / 60)
+      const s = Math.floor(t % 60)
+      return `${m.toString().padStart(2,"0")}:${s.toString().padStart(2,"0")}`
+    }
+
+    audio.addEventListener("timeupdate", () => {
+      audioTime.textContent = formatTime(audio.currentTime)
+    })
+
+    video.addEventListener("timeupdate", () => {
+      videoTime.textContent = formatTime(video.currentTime)
+    })
+  </script>
+</body>
+</html>
