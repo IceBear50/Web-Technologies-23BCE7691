@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Finder</title>
+    <link rel="stylesheet" href="../Exercise-1/style.css">
+</head>
+<body>
+    <div class="main-content">
+        <h1>Book Finder</h1>
+        <div class="toolbar">
+            <input type="text" id="search" placeholder="Search title..." oninput="searchBooks()">
+            <select id="cat" onchange="filterBooks()">
+                <option value="">All Categories</option>
+                <option value="Programming">Programming</option>
+                <option value="Database">Database</option>
+            </select>
+            <button onclick="sort('price')">Sort Price</button>
+            <button onclick="sort('rating')">Sort Rating</button>
+            <button onclick="topRated()">Top Rated</button>
+            <div class="toolbar">
+    <input type="text" id="search" placeholder="Search title..." oninput="searchBooks()">
+    <button onclick="downloadBooksJSON()" style="background: #10b981; color: white;">Export Books JSON</button>
+</div>
+        </div>
+        <div id="bookResults" class="notes-grid"></div>
+        <button id="loadMore" onclick="loadMore()">Load More</button>
+    </div>
+    <script src="books.js"></script>
+</body>
+</html>

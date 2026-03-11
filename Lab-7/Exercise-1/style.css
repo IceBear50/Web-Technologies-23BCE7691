@@ -1,0 +1,11 @@
+:root { --p: #6366f1; --bg: #f8fafc; --b: #e2e8f0; }
+body { font-family: sans-serif; background: var(--bg); margin: 0; }
+.app-container { display: grid; grid-template-columns: 300px 1fr; min-height: 100vh; }
+.sidebar { background: white; padding: 20px; border-right: 1px solid var(--b); }
+.main-content { padding: 40px; }
+.notes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+.note-card { background: white; padding: 20px; border-radius: 10px; border: 1px solid var(--b); }
+.subject-tag { background: #eef2ff; color: var(--p); padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; }
+input, textarea, select { width: 100%; margin-bottom: 15px; padding: 10px; border: 1px solid var(--b); border-radius: 6px; }
+.btn-primary { background: var(--p); color: white; border: none; padding: 10px; width: 100%; cursor: pointer; border-radius: 6px; }
+.toolbar { display: flex; gap: 10px; margin-bottom: 30px; }

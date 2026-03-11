@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <h2>Add Note</h2>
+            <form id="noteForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea id="description" placeholder="Description" rows="4"></textarea>
+                <button type="submit" class="btn-primary">Save Note</button>
+            </form>
+        </aside>
+        <main class="main-content">
+            <h1>My Notes</h1>
+            <div id="notesContainer" class="notes-grid"></div>
+            <button onclick="downloadJSON()" class="btn-primary" style="margin-top: 10px; background: #10b981;">
+    Download Notes as JSON
+</button>
+        </main>
+    </div>
+    <script src="notes.js"></script>
+</body>
+</html>
