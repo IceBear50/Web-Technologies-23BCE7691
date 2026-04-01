@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Smart Shopping Cart</h1>
+    <h3>Popular Headphones</h3>
+    <div id="products"></div>
+
+    <form id="addForm">
+      <input type="text" id="pname" placeholder="Product Name" required>
+      <input type="number" id="pprice" placeholder="Price" required>
+      <select id="pcategory">
+        <option value="general">General</option>
+        <option value="electronics">Electronics</option>
+        <option value="education">Education</option>
+      </select>
+      <button>Add Item</button>
+    </form>
+
+    <div id="cart"></div>
+
+    <input type="text" id="coupon" placeholder="Coupon Code: HAPPY50">
+    
+    <div class="summary">
+      <div>Total <span>₹<span id="total">0</span></span></div>
+      <div>Discount <span>₹<span id="discount">0</span></span></div>
+      <div class="final">Final Amount <span>₹<span id="final">0</span></span></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

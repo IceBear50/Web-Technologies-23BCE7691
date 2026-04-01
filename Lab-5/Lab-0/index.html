@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 0;
+            transition: 0.3s;
+        }
+
+        header {
+            background: #003366;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background: #0055a5;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background: #003f7f;
+        }
+
+        .hero {
+            padding: 80px;
+            text-align: center;
+            background: #e8eef5;
+        }
+
+        /* Dark Mode Styles */
+        .dark-mode {
+            background: #1e1e1e !important;
+            color: white !important;
+        }
+        .dark-mode header, .dark-mode nav {
+            background: #111 !important;
+        }
+        .dark-mode .hero {
+            background: #2a2a2a !important;
+        }
+
+        /* Toggle Button */
+        #themeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }

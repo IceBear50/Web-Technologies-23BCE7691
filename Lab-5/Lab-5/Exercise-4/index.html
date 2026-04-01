@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Exercise-1/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Inventory System</h2>
+        <div class="grid-form" style="margin-bottom: 1rem;">
+            <input type="text" id="searchInput" placeholder="Search by category...">
+        </div>
+        <form id="invForm" class="grid-form">
+            <input type="text" id="pId" placeholder="Product ID" required>
+            <input type="text" id="pName" placeholder="Name" required>
+            <input type="text" id="pCat" placeholder="Category" required>
+            <input type="number" id="pPrice" placeholder="Price" step="0.01" required>
+            <input type="number" id="pStock" placeholder="Stock" required>
+            <button type="submit">Save</button>
+        </form>
+        
+        <h3>Total Inventory Value: $<span id="totalValue">0.00</span></h3>
+        
+        <table>
+            <thead><tr><th>ID</th><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th></tr></thead>
+            <tbody id="invTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

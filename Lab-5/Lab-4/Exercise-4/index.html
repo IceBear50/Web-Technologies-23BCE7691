@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Exercise-1/styles.css">
+    <style>
+        .weather-card { text-align: center; padding: 1rem; }
+        .temp-display { font-size: 3.5rem; font-weight: 700; margin: 1rem 0; color: var(--text); }
+        .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.5rem; }
+        .meta-item { background: #f1f5f9; padding: 1rem; border-radius: 8px; font-size: 0.9rem; }
+        .meta-label { color: #64748b; display: block; margin-bottom: 0.25rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="margin-bottom: 30px;">
+            Weather
+        </div>
+        <div class="input-group" style="margin-bottom: 1rem;">
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g., London)">
+            <button id="searchBtn" style="position:absolute; right:5px; top:5px; bottom:5px; width:auto; padding:0 1rem;">Go</button>
+        </div>
+        
+        <div id="loader" class="spinner"></div>
+        <div id="error" style="color:var(--error); text-align:center; display:none;"></div>
+
+        <div id="weatherUI" class="weather-card" style="display: none;">
+            <h2 id="cityName"></h2>
+            <div id="desc" style="text-transform: capitalize; color: #64748b;"></div>
+            <div class="temp-display"><span id="temp"></span>°C</div>
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label">Humidity</span>
+                    <strong id="humidity"></strong>%
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Wind Speed</span>
+                    <strong id="wind"></strong> m/s
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

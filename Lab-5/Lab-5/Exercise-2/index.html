@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Exercise-1/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Library Tracker</h2>
+        <div id="msgBox"></div>
+        <form id="bookForm" class="grid-form">
+            <input type="text" id="bId" placeholder="Book ID" required>
+            <input type="text" id="bTitle" placeholder="Title" required>
+            <input type="text" id="bAuthor" placeholder="Author" required>
+            <select id="bStatus">
+                <option value="Available">Available</option>
+                <option value="Checked Out">Checked Out</option>
+            </select>
+            <button type="submit">Save</button>
+        </form>
+        <table>
+            <thead><tr><th>ID</th><th>Title</th><th>Author</th><th>Status</th><th>Actions</th></tr></thead>
+            <tbody id="bookTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

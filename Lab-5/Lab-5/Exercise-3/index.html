@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../Exercise-1/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Records</h2>
+        <div id="msgBox"></div>
+        <form id="studentForm" class="grid-form">
+            <input type="text" id="sId" placeholder="ID" required>
+            <input type="text" id="sName" placeholder="Name" required>
+            <input type="text" id="sCourse" placeholder="Course" required>
+            <input type="number" id="sMarks" placeholder="Marks" required min="0" max="100">
+            <button type="submit">Save</button>
+        </form>
+        <table>
+            <thead><tr><th>ID</th><th>Name</th><th>Course</th><th>Marks</th><th>Actions</th></tr></thead>
+            <tbody id="studentTable"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

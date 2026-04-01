@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Planner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Task Planner</h1>
+
+    <div class="timer-section">
+      <div class="circle">
+        <svg width="160" height="160">
+          <circle cx="80" cy="80" r="70" class="bg"/>
+          <circle cx="80" cy="80" r="70" class="progress"/>
+        </svg>
+        <div class="time" id="time">25:00</div>
+      </div>
+      <div class="timer-controls">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+
+    <div class="input-bar">
+      <input id="taskInput" placeholder="Enter task name">
+      <button id="addBtn">Add Task</button>
+    </div>
+
+    <div class="board">
+      <div class="column">
+        <h3>To Do</h3>
+        <div class="tasks" id="todo"></div>
+      </div>
+
+      <div class="column">
+        <h3>In Progress</h3>
+        <div class="tasks" id="progress"></div>
+      </div>
+
+      <div class="column">
+        <h3>Completed</h3>
+        <div class="tasks" id="done"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Task Completed Successfully</div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+    {"id": "P1", "name": "Sony Headphone", "category": "Electronics", "price": 999.99, "stock": 15},
+    {"id": "P2", "name": "Chair", "category": "Furniture", "price": 150.00, "stock": 3},
+    {"id": "P3", "name": "Airpods", "category": "Electronics", "price": 25.50, "stock": 50}
+]

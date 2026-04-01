@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f3f7;
+            padding: 20px;
+            transition: 0.3s;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        h2 {
+            text-align: center;
+            color: #003366;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #999;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #003366;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #001f3f;
+        }
+
+        .back-btn {
+            background: #777;
+        }
+
+        .back-btn:hover {
+            background: #555;
+        }
+
+        #msg {
+            text-align: center;
+            margin-top: 15px;
+            color: green;
+        }
+
+        /* Dark Mode */
+        .dark-mode {
+            background: #1e1e1e !important;
+            color: white !important;
+        }
+        .dark-mode .container {
+            background: #2a2a2a !important;
+            color: white !important;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+        .dark-mode input {
+            background: #333;
+            color: white;
+            border: 1px solid #666;
+        }
+
+        /* Toggle Button */
+        #themeToggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button id="themeToggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <input type="text" id="regno" placeholder="Registration Number">
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <input type="email" id="email" placeholder="Email Address">
+
+    <button onclick="submitForm()">Submit</button>
+
+    <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+
+    <p id="msg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

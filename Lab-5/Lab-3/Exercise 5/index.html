@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Stage Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay">
+    <div class="card">
+      <h2>Registration</h2>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <form id="multiForm">
+
+        <div class="stage active">
+          <input id="name" placeholder="Full Name">
+          <input id="email" placeholder="Email">
+        </div>
+
+        <div class="stage">
+          <input id="password" type="password" placeholder="Password">
+          <input id="confirmPassword" type="password" placeholder="Confirm Password">
+        </div>
+
+        <div class="stage">
+          <input id="age" type="number" placeholder="Age">
+          <select id="role">
+            <option value="">Select Role</option>
+            <option>Student</option>
+            <option>Professional</option>
+          </select>
+        </div>
+
+        <div class="stage">
+          <input id="skills" placeholder="Skills (comma separated)">
+        </div>
+
+        <div class="nav">
+          <button type="button" id="prev">Back</button>
+          <button type="button" id="next">Next</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  <div id="toast-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

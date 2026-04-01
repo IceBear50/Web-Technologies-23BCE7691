@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 950px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.timer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.circle {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+circle {
+  fill: none;
+  stroke-width: 10;
+}
+
+.bg {
+  stroke: rgba(255,255,255,0.2);
+}
+
+.progress {
+  stroke: #00e5ff;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 1s linear;
+}
+
+.time {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.timer-controls button {
+  margin: 4px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #00e5ff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.input-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  background: #00e5ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.column {
+  background: rgba(255,255,255,0.1);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.tasks {
+  min-height: 250px;
+}
+
+.task {
+  background: rgba(255,255,255,0.9);
+  color: #111;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: grab;
+}
+
+.task small {
+  display: block;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.completed {
+  background: #4caf50;
+  color: #fff;
+}
+
+.toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #4caf50;
+  padding: 14px 18px;
+  border-radius: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>User Registration</h1>
+
+    <form id="userForm">
+      <input type="text" id="name" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="text" id="mobile" placeholder="Mobile Number">
+      <input type="password" id="password" placeholder="Password">
+      <button type="submit">Register</button>
+    </form>
+
+    <h2>Registered Users</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Mobile</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+
+    <button class="clear" onclick="clearAll()">Clear All Users</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
